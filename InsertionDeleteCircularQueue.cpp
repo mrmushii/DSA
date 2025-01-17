@@ -40,7 +40,7 @@ int main(){
 }
 
 void Qinsertion(int item){
-  if((f = r+1) || (f==0 && r== max-1)){
+  if((f == r+1) || (f==0 && r== max-1)){
     cout<<"Overflow"<<endl;
   }
   else
