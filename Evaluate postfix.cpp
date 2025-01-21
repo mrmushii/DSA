@@ -50,7 +50,7 @@ int main(){
       }
 
     }
-    cout<<postfx[i-1]<<"    ";
+    
     for ( j = 0; j <= top; j++)
     {
       cout<<s[j];

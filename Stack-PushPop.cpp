@@ -15,10 +15,10 @@ int main(){
   do
   {
     cout<<"1. Push"<<endl;
-  cout<<"2. Pop"<<endl;
-  cout<<"3. Exit"<<endl;
-  cout<<"Enter your choice: ";
-  cin>>option;
+    cout<<"2. Pop"<<endl;
+    cout<<"3. Exit"<<endl;
+    cout<<"Enter your choice: ";
+    cin>>option;
   switch (option){
     case 1:
     cout << "\nEnter a value: ";

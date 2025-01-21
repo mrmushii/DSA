@@ -1,9 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
 int fibonacci ( int n);
-
 int main(){
   int n,fibo;
   cout<<"Enter a number: ";
@@ -13,11 +11,8 @@ int main(){
     cout<< fibo <<" ";
   }
   cout<<endl;
-
-
   return 0;
 }
-
 int fibonacci(int n){
   if(n==0 || n== 1)
     return n;
