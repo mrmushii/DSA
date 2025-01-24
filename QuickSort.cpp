@@ -12,11 +12,8 @@ int partition(vector<int> &A,int st, int end){
   }
   index++;
   swap(A[end],A[index]);
-
   return index;
-  
 }
-
 void quicksort(vector<int> &A,int st, int end){
   if(st<end){
    int pIndex = partition(A,st,  end);
