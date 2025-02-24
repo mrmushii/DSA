@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 int partition(vector<int> &A,int st, int end){
-  int index = -1, pivot = A[end];
+  int index = st-1, pivot = A[end];
   for (int j = st; j < end; j++)
   {
     if(A[j]<=pivot){
