@@ -9,7 +9,7 @@ int main(){
   {
     temp = a[k];
     ptr = k-1;
-    while (ptr >= 0 && temp < a[ptr])
+    while (ptr >= 0 &&  a[ptr]>temp)
 
     {
       a[ptr+1]=a[ptr];
