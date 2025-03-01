@@ -1,7 +1,29 @@
 #include <iostream>
-using namespace std;
+#include <vector>
 
+int main() {
+    int n;
+    std::cout << "Enter the number of elements in the array: ";
+    std::cin >> n;
 
-int main(){
-   cout<<1+1<<endl;
+    std::vector<int> arr(n);
+    std::cout << "Enter the elements of the array:\n";
+    for (int i = 0; i < n; ++i) {
+        std::cin >> arr[i];
+    }
+
+    std::vector<int> prefixSum(n);
+    prefixSum[0] = arr[0];
+
+    for (int i = 1; i < n; ++i) {
+        prefixSum[i] = prefixSum[i - 1] + arr[i];
+    }
+
+    std::cout << "Prefix Sum Array:\n";
+    for (int i = 0; i < n; ++i) {
+        std::cout << prefixSum[i] << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
 }
